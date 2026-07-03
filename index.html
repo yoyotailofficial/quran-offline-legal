@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Quran Audio — Legal &amp; Credits</title>
+<style>
+  :root {
+    --bg-base: #0E1320;
+    --bg-surface: #171D2E;
+    --bg-elevated: #1F2740;
+    --gold: #E8B65A;
+    --teal: #5FB0A8;
+    --text-primary: #F4F1EA;
+    --text-secondary: #9AA3B8;
+    --line: #2A3350;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg-base);
+    color: var(--text-primary);
+    font-family: -apple-system, "Segoe UI", Roboto, "Plus Jakarta Sans", Arial, sans-serif;
+    line-height: 1.65;
+  }
+  .wrap { max-width: 760px; margin: 0 auto; padding: 48px 20px 96px; }
+  header { text-align: center; margin-bottom: 40px; }
+  header .mark {
+    width: 56px; height: 56px; margin: 0 auto 16px;
+    border-radius: 16px;
+    background: linear-gradient(135deg, var(--bg-elevated), var(--bg-surface));
+    border: 1px solid var(--gold);
+    display: flex; align-items: center; justify-content: center;
+    font-size: 24px; color: var(--gold);
+  }
+  h1 { font-size: 26px; margin: 0 0 6px; }
+  header p { color: var(--text-secondary); margin: 0; font-size: 14px; }
+
+  nav.toc {
+    display: flex; gap: 10px; justify-content: center; flex-wrap: wrap;
+    margin: 28px 0 44px;
+  }
+  nav.toc a {
+    color: var(--text-primary); text-decoration: none;
+    background: var(--bg-surface); border: 1px solid var(--line);
+    padding: 8px 16px; border-radius: 999px; font-size: 13px;
+  }
+  nav.toc a:hover { border-color: var(--gold); color: var(--gold); }
+
+  section {
+    background: var(--bg-surface);
+    border: 1px solid var(--line);
+    border-radius: 16px;
+    padding: 28px 24px;
+    margin-bottom: 24px;
+    scroll-margin-top: 20px;
+  }
+  section h2 {
+    color: var(--gold);
+    font-size: 19px;
+    margin-top: 0;
+    display: flex; align-items: center; gap: 8px;
+  }
+  section h3 {
+    font-size: 15px;
+    color: var(--text-primary);
+    margin: 20px 0 8px;
+  }
+  p { color: var(--text-secondary); font-size: 14.5px; margin: 0 0 12px; }
+  ul { color: var(--text-secondary); font-size: 14.5px; padding-left: 20px; margin: 0 0 12px; }
+  li { margin-bottom: 6px; }
+  strong { color: var(--text-primary); }
+  a.inline { color: var(--teal); }
+  .updated { color: var(--text-secondary); font-size: 12.5px; text-align: center; margin-top: 40px; }
+  .badge {
+    display: inline-block; background: rgba(232,182,90,0.12); color: var(--gold);
+    border: 1px solid rgba(232,182,90,0.35); border-radius: 8px;
+    padding: 2px 8px; font-size: 11.5px; margin-left: 8px; vertical-align: middle;
+  }
+  table { width: 100%; border-collapse: collapse; margin: 12px 0; font-size: 13.5px; }
+  th, td { text-align: left; padding: 8px 10px; border-bottom: 1px solid var(--line); color: var(--text-secondary); }
+  th { color: var(--text-primary); font-weight: 600; }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header>
+    <div class="mark">▶</div>
+    <h1>Quran Audio — Listen Offline</h1>
+    <p>Legal information, disclaimer, and content credits</p>
+  </header>
+
+  <nav class="toc">
+    <a href="#privacy">Privacy Policy</a>
+    <a href="#disclaimer">Disclaimer</a>
+    <a href="#credits">Credits &amp; Licenses</a>
+  </nav>
+
+  <!-- ============ PRIVACY POLICY ============ -->
+  <section id="privacy">
+    <h2>Privacy Policy</h2>
+    <p>This Privacy Policy explains how the Quran Audio — Listen Offline app ("the App") handles information. In short: <strong>the App does not collect, store, or share any personal data.</strong></p>
+
+    <h3>Data we do NOT collect</h3>
+    <ul>
+      <li>No account or sign-up is required or available.</li>
+      <li>No name, email, phone number, or contact list is collected.</li>
+      <li>No advertising identifiers are collected — the App shows no ads.</li>
+      <li>No analytics or usage-tracking SDKs are embedded in the App.</li>
+      <li>No location data is accessed or collected.</li>
+    </ul>
+
+    <h3>What stays on your device</h3>
+    <p>Your preferences (theme, default reciter, download settings) and your list of downloaded surahs are stored <strong>locally on your device only</strong>, using standard Android app storage. This information is never transmitted to us or to any third party, and is deleted automatically if you uninstall the App.</p>
+
+    <h3>Network requests</h3>
+    <p>To fetch surah/reciter information and to stream or download recitation audio, the App connects directly to the public API and audio servers of <a class="inline" href="https://www.mp3quran.net" target="_blank" rel="noopener">mp3quran.net</a>. These requests include standard technical information (such as your IP address) that any network request contains, as is the case with any app that connects to the internet. We do not operate our own backend server and do not see or store this traffic ourselves.</p>
+
+    <h3>Permissions used</h3>
+    <table>
+      <tr><th>Permission</th><th>Why it's needed</th></tr>
+      <tr><td>Internet</td><td>To fetch surah/reciter data and audio.</td></tr>
+      <tr><td>Foreground Service (Media Playback)</td><td>To keep audio playing in the background and show playback controls.</td></tr>
+      <tr><td>Foreground Service (Data Sync)</td><td>To download surahs for offline listening.</td></tr>
+      <tr><td>Notifications</td><td>To show the playback/download notification (Android 13+).</td></tr>
+    </table>
+
+    <h3>Children's privacy</h3>
+    <p>The App does not knowingly collect any information from anyone, including children, because it does not collect personal information from any user.</p>
+
+    <h3>Changes to this policy</h3>
+    <p>If this policy changes, the update will be posted on this page with a revised "last updated" date below.</p>
+
+    <h3>Contact</h3>
+    <p>Questions about this policy can be sent to: <strong>[yoyotailofficial@gmail.com]</strong></p>
+  </section>
+
+  <!-- ============ DISCLAIMER ============ -->
+  <section id="disclaimer">
+    <h2>Disclaimer</h2>
+
+    <h3>Independent, unofficial app</h3>
+    <p>Quran Audio — Listen Offline is an independent app created to make Qur'an recitation easy to listen to, including offline. It is <strong>not affiliated with, endorsed by, or officially connected to</strong> any of the featured reciters, mp3quran.net, or any religious authority or organization.</p>
+
+    <h3>Source of content</h3>
+    <p>All recitation audio and reciter/surah metadata are retrieved from the public, freely-provided API of <a class="inline" href="https://www.mp3quran.net" target="_blank" rel="noopener">mp3quran.net</a>. The App does not host, alter, or re-encode this audio — it plays and, when you choose to download, stores an unmodified copy of the file provided by that service.</p>
+
+    <h3>No claim of authoritative accuracy</h3>
+    <p>While every reasonable effort is made to present recitations and surah information correctly, the App makes no guarantee of absolute accuracy, completeness, or fitness for religious rulings (fatwa) or scholarly reference. For matters of religious guidance, please consult a qualified scholar or an authoritative mushaf/source.</p>
+
+    <h3>Availability</h3>
+    <p>Because audio is streamed from a third-party service, availability of specific reciters or surahs may occasionally change or become temporarily unavailable due to circumstances outside the App's control.</p>
+
+    <h3>Non-commercial, da'wah intent</h3>
+    <p>This App is built and offered free of charge, with no advertisements, no in-app purchases, and no monetization, as a form of da'wah (Islamic outreach) intended purely for the benefit of listeners, in sha Allah.</p>
+  </section>
+
+  <!-- ============ CREDITS ============ -->
+  <section id="credits">
+    <h2>Credits &amp; Licenses <span class="badge">Attribution</span></h2>
+
+    <h3>Audio &amp; data source</h3>
+    <p>All Qur'an recitation audio, reciter listings, and surah data used in this App are provided by <strong><a class="inline" href="https://www.mp3quran.net" target="_blank" rel="noopener">mp3quran.net</a></strong> — Quran Audio Library, via their public API.</p>
+    <p>Per mp3quran.net's own published policy, they explicitly permit visitors and developers to use content and links from their site:</p>
+    <p style="font-style:italic; border-left: 2px solid var(--gold); padding-left: 12px;">"All rights are available to everyone, and we allow any visitor or developer to copy any material or use any link on the websites." — mp3quran.net</p>
+    <p>We are sincerely grateful to mp3quran.net and to every reciter whose recitation is made freely available through their platform, and to the reciters themselves for sharing their voices for the benefit of the ummah.</p>
+
+    <h3>Reciters featured</h3>
+    <p>The full, current list of reciters is fetched live from mp3quran.net and shown inside the App's reciter selection screen. It includes reciters such as Mishary Rashid Alafasy, Abdul Basit Abdus Samad, Abdul Rahman As-Sudais, Saud Al-Shuraim, Maher Al-Muaiqly, and others made available by mp3quran.net.</p>
+
+    <h3>Qur'an text (uncopyrighted)</h3>
+    <p>Surah names, meanings, and metadata reflect the Qur'an, whose original Arabic text is not subject to copyright.</p>
+
+    <h3>App development</h3>
+    <p>Quran Audio — Listen Offline was independently developed by [yoyotailofficial], built with Kotlin, Jetpack Compose, and Media3 (ExoPlayer).</p>
+  </section>
+
+  <p class="updated">Last updated: [DATE] · Quran Audio — Listen Offline</p>
+
+</div>
+</body>
+</html>
